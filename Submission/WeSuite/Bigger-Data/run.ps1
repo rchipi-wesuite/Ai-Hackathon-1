@@ -8,7 +8,7 @@ if (-Not (Test-Path ".\.venv\Scripts\Activate")) {
 Write-Host "Activating virtual environment..." -ForegroundColor Cyan
 & .\.venv\Scripts\Activate
 
-# Start the Uvicorn server
+# Start app
 Write-Host "Starting streamlit app..." -ForegroundColor Green
 streamlit run app.py
 # streamlit run app.py --server.runOnSave=false --global.developmentMode=true
